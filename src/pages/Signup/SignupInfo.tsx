@@ -9,7 +9,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { FaForward, FaClone } from "react-icons/fa";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo-secondary.svg";
 import { theme } from "../../styles/theme";
 
 export const SignupInfo = () => {

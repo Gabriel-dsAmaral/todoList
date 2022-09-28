@@ -1,5 +1,5 @@
 import { Grid, Image, Heading, Text } from "@chakra-ui/react";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo-primary.svg";
 
 export const LoginInfo = () => {
   return (
