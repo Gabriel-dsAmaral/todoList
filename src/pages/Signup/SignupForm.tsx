@@ -11,7 +11,7 @@ import { Input } from "../../components/input";
 interface SignUpData {
   email: string;
   password: string;
-  name: string;
+  user_name: string;
   confirm_password?: string;
 }
 
@@ -45,11 +45,11 @@ export const SignupForm = ({
         <VStack mt="6" spacing="5">
           <Box w="100%">
             <Input
-              placeholder="Digite seu nome"
+              placeholder="Digite seu username"
               icon={FaUser}
-              label="Nome"
+              label="username"
               error={errors.name}
-              {...register("name")}
+              {...register("user_name")}
             />
             <Input
               placeholder="Digite seu login"

@@ -10,9 +10,10 @@ import { api } from "../../services/api";
 import { ModalSuccess } from "../../components/Modal/ModalSuccess";
 import { ModalError } from "../../components/Modal/ModalError";
 import { useHistory } from "react-router-dom";
+import { useUser } from "../../providers/UserProvider";
 
 const signupSchema = yup.object().shape({
-  name: yup.string().required("nome obrigatório"),
+  user_name: yup.string().required("username obrigatório"),
   email: yup.string().required("Email obrigatório").email("Email inválido"),
   password: yup.string().required("Senha obrigatória"),
   confirm_password: yup
@@ -24,11 +25,13 @@ const signupSchema = yup.object().shape({
 interface SignUpData {
   email: string;
   password: string;
-  name: string;
+  user_name: string;
 }
 
 export const Signup = () => {
   const [loading, setLoading] = useState(false);
+
+  const { sigNup } = useUser();
 
   const {
     formState: { errors },
@@ -47,10 +50,9 @@ export const Signup = () => {
     onClose: onModalErrorClose,
   } = useDisclosure();
 
-  const handleSignup = ({ name, email, password }: SignUpData) => {
+  const handleSignup = ({ user_name, email, password }: SignUpData) => {
     setLoading(true);
-    api
-      .post("/register", { name, email, password })
+    sigNup({ email, user_name, password })
       .then((response) => {
         setLoading(false);
         onModalSuccessOpen();
