@@ -23,7 +23,7 @@ interface TaskData {
 
 interface TaskProviderData {
   allTasks: TaskData[];
-  getTasks: () => void;
+  getTasks: () => Promise<void>;
   createTask: (credentials: TaskCreateData) => Promise<void>;
   updateTask: (credentials: TaskUpdateData) => Promise<void>;
   completeTask: (credentials: string) => Promise<void>;

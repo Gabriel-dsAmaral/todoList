@@ -6,7 +6,6 @@ import { useState } from "react";
 import { SignupInfo } from "./SignupInfo";
 import { SignupForm } from "./SignupForm";
 import { GoBackButton } from "./GoBackButton";
-import { api } from "../../services/api";
 import { ModalSuccess } from "../../components/Modal/ModalSuccess";
 import { ModalError } from "../../components/Modal/ModalError";
 import { useHistory } from "react-router-dom";
