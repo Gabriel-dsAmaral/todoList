@@ -1,5 +1,5 @@
 import { Center, Flex, Heading, Image, useDisclosure } from "@chakra-ui/react";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo-primary.svg";
 import { Menu } from "./Menu";
 import { FaTh } from "react-icons/fa";
 import { theme } from "../../styles/theme";

@@ -16,8 +16,6 @@ export const CreateButton = () => {
         borderBottomWidth="1px"
         borderColor="gray.50"
         flexDir={["column", "column", "row", "row"]}
-        alignItems="center"
-        justifyContent="center"
       >
         <Button
           bg="purple.500"
