@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Gabriel-dsAmaral 
+Gabriel-dsAmaral
+/
+desafio_mb.labs
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+desafio_mb.labs/.gitignore
+@Gabriel-dsAmaral
+Gabriel-dsAmaral feat: working connection with almost all necessary routes of the api
+Latest commit f7946ce on 30 Jul
+ History
+ 1 contributor
+24 lines (19 sloc)  320 Bytes
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -21,3 +50,19 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+desafio_mb.labs/src at develop · Gabriel-dsAmaral/desafio_mb.labsdesafio_mb.labs/.gitignore at develop · Gabriel-dsAmaral/desafio_mb.labs
