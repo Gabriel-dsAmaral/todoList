@@ -2,7 +2,8 @@ import { Flex } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import { useUser } from "../../providers/UserProvider";
 import { LoginInfo } from "./LoginInfo";
 import { LoginForm } from "./LoginForm";
@@ -18,9 +19,20 @@ interface SignInData {
 }
 
 export const Login = () => {
+  const history = useHistory();
+
   const [loading, setLoading] = useState(false);
 
-  const { signIn } = useUser();
+  const { signIn, token } = useUser();
+
+  useEffect(() => {
+    if (token) {
+      history.push("/dashboard");
+    } else {
+      history.push("/");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [token]);
 
   const {
     formState: { errors },
