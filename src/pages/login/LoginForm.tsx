@@ -46,7 +46,7 @@ export const LoginForm = ({
         <VStack mt="6" spacing="5">
           <Box w="100%">
             <Input
-              placeholder="Digite seu login"
+              placeholder="Digite seu email"
               icon={FaEnvelope}
               label="Login"
               type="email"

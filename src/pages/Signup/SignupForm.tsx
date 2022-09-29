@@ -52,9 +52,9 @@ export const SignupForm = ({
               {...register("user_name")}
             />
             <Input
-              placeholder="Digite seu login"
+              placeholder="Digite seu email"
               icon={FaEnvelope}
-              label="Login"
+              label="email"
               type="email"
               error={errors.email}
               {...register("email")}
